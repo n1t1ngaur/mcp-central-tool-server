@@ -1,0 +1,10 @@
+git checkout main
+git pull origin main
+
+git checkout -b feature/day-02
+
+# changes karo
+
+git add .
+git commit -m "Day 02: add MCP architecture documentation"
+git push -u origin feature/day-02
