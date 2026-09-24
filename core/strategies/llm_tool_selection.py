@@ -18,18 +18,18 @@ class LLMToolSelectionStrategy(ToolSelectionStrategy):
         if not tools:
             return None
 
-        prompt = f"""
-You are a tool selection system.
+        prompt =    f"""
+                        You are a tool selection system.
 
-User query:
-{query}
+                        User query:
+                        {query}
 
-Available tools:
-{tools}
+                        Available tools:
+                        {tools}
 
-Return only the exact tool name that should be used.
-If no tool is required, return NONE.
-"""
+                        Return only the exact tool name that should be used.
+                        If no tool is required, return NONE.
+                    """
 
         response = await self.llm.generate(
             messages=[
