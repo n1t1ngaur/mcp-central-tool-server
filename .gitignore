@@ -1,5 +1,12 @@
 instructions.txt
 
+# Local environment files
+.env
+.env.mcp
+.env.aviation
+.env.country
+.env.mailbox
+
 # Python bytecode
 __pycache__/
 *.py[cod]

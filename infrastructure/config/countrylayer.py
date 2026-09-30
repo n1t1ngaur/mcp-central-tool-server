@@ -8,6 +8,6 @@ class CountrySettings(BaseSettings):
     filters: str = "name;capital;currencies"
 
     model_config = SettingsConfigDict(
-        env_file=".env",
+        env_file=".env.country",
         env_prefix="COUNTRY_"
     )

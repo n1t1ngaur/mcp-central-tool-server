@@ -6,7 +6,6 @@ class MailboxSettings(BaseSettings):
     api_url: str
     toolName: str
     description: str
-    email: str
 
     smtp: bool = True
     catch_all: bool = False
@@ -14,6 +13,6 @@ class MailboxSettings(BaseSettings):
     callback: str | None = None
 
     model_config = SettingsConfigDict(
-        env_file=".env",
+        env_file=".env.mailbox",
         env_prefix="MAILBOX_"
     )

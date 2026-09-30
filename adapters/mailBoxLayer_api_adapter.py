@@ -9,6 +9,7 @@ class MailValidatorLayerAPIAdapter:
 
     async def validate_email(
         self,
+        email: str,
         smtp: bool = True,
         catch_all: bool = False,
         format: bool = False,
@@ -16,6 +17,7 @@ class MailValidatorLayerAPIAdapter:
     ):
         params = {
             "access_key": self.settings.api_key,
+            "email": email,
             "smtp": smtp or self.settings.smtp,
             "catch_all": catch_all or self.settings.catch_all,
             "format": format or self.settings.format,

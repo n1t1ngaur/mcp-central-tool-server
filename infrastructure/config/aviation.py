@@ -9,6 +9,6 @@ class AviationSettings(BaseSettings):
     description: str
 
     model_config = SettingsConfigDict(
-        env_file=".env",
+        env_file=".env.aviation",
         env_prefix="AVIATION_"
     )

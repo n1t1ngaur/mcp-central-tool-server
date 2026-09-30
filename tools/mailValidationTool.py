@@ -4,8 +4,8 @@ from core.interfaces.tools import MCPTool, ToolResult
 
 
 class MailValidationTool(MCPTool):
-    def __init__(self, MailValidationService):
-        self.mailbox_layer_service = MailValidationService
+    def __init__(self, mail_validation_layer_service):
+        self.mailbox_layer_service = mail_validation_layer_service
         self.settings = MailboxSettings()
 
     @property

@@ -4,8 +4,8 @@ from core.interfaces.tools import MCPTool, ToolResult
 
 
 class CountryLayerTool(MCPTool):
-    def __init__(self,CountryLayerService):
-        self.CountryLayerService = CountryLayerService
+    def __init__(self, country_layer_service):
+        self.country_layer_service = country_layer_service
         self.settings = CountrySettings()
 
     @property
